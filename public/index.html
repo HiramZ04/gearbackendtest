@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>Btoncito:</div>
+  <button id="botonprueba">Click me</button>
+  <script>
+    const button = document.getElementById('botonprueba');
+    button.addEventListener('click', async () => {
+      const response =  await fetch('/contract-msg', { 
+        method: 'POST'
+       })
+    })
+  
+  </script>
+</body>
+</html>
